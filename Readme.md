@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Кузнецов Андрей](https://up.htmlacademy.ru/htmlcss/27/user/1146763).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Островский](https://htmlacademy.ru/profile/grandmaus).
 
 ---
 
