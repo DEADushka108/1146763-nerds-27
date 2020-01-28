@@ -4,87 +4,183 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
     <header class="main-header">
-
       <nav class="main-navigation">
         <a href="index.html">
           <img src="img/index-logo.png" width="100" height="100" alt="Студия Нёрдс"><!--Размеры изображений просто проставил, что бы потом не забыть-->
         </a>
         <ul>
-          <li><a href="#">Cтудия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li>
+            <a href="">Cтудия</a>
+          </li>
+          <li>
+            <a href="">Клиенты</a>
+          </li>
+          <li>
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li>
+            <a href="">Контакты</a>
+          </li>
         </ul>
         <ul class="user-cart">
-          <li><a href="#">Корзина</a></li>
+          <li>
+            <a href="">Корзина</a>
+          </li>
         </ul>
       </nav><!--End main navigation-->
-      
-      <div class="slider">
-        <!--Здесь будет слайдер-->
-      </div>
-
     </header><!--End main header-->
-
     <main>
-
+      <h1 class="section-title">Дизайн-студия Нёрдс</h1>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <b>Долго, дорого скрупулезно.</b>
+            <p>
+              Математически выверенный дизайн для
+              вашего сайта или мобильного приложения
+            </p>
+            <a class="btn btn-slider" href="">Узнать больше</a>
+          </div>
+          <div class="slide">
+            <b>Любим математику как никто другой</b>
+            <p>
+              Никакого креатива, только математические
+              формулы для расёта идеальных пропорций.
+            </p>
+            <a class="btn btn-slider" href="">Узнать больше</a>
+          </div>
+          <div class="slide">
+            <b>Только ночь, только хардкор</b>
+            <p>
+              Работать днем, как все? Мы против этого.
+              Ближе к полуночи работа только начинается.
+            </p>
+            <a class="btn btn-slider" href="">Узнать больше</a>
+          </div>
+        </div>
+        <!--Здесь будет слайдер-->
+      </div><!--End main slider-->
       <section class="services">
+        <h2 class="section-title">Услуги</h2>
         <div class="service-block">
-          <img src="img/service-web.png" width="100" height="100">
+          <img src="img/service-web.png" width="100" height="100" alt="Веб-сайты">
           <h3>Веб-сайты</h3>
           <p>
-            Мир никогда не будет прежним<br>
+            Мир никогда не будет прежним
             после того как увидит ваш сайт!
           </p>
           <a class="btn btn-service" href="catalog.html">Заказать</a>
         </div>
         <div class="service-block">
-          <img src="img/service-app.png" width="100" height="100">
+          <img src="img/service-app.png" width="100" height="100" alt="Приложения">
           <h3>Приложения</h3>
           <p>
-            Покорите топ-10 приложений в<br>
+            Покорите топ-10 приложений в
             AppStore и Google Play
           </p>
           <a class="btn btn-service" href="catalog.html">Заказать</a>
         </div>
         <div class="service-block">
-          <img src="img/service-presentation.png" width="100" height="100">
+          <img src="img/service-presentation.png" width="100" height="100" alt="Презентации">
           <h3>Презентации</h3>
           <p>
-            Вы даже не подозреваете,<br>
+            Вы даже не подозреваете,
             насколько вы изумительны
           </p>
           <a class="btn btn-service" href="catalog.html">Заказать</a>
         </div>
-
       </section><!--End section services-->
-
+      <section class="about-us">
+        <h2 class="section-title">О нас</h2>
+        <div class="about-us-write-up">
+          <b>Мы маленькая, но гордая дизайн студия из Краснодара</b>
+          <p>
+            Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+            превыше креатива. Работаем не покладая рук, как роботы.
+          </p>
+          <span class="about-us-text">Выполняем заказы на разработку:</span>
+          <ul class="about-us-list-develop">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="about-us-write-up">
+          <a href="index.html">
+            <img src="img/main-logo.png" width="200" height="200" alt="Дизайн-студия Нёрдс">
+          </a>
+          <table>
+            <caption class="about-us-text">с 2004 года любим точность во всём:</caption>
+            <tr>
+              <th>146<sup>%</sup></th>
+              <th>100<sup>%</sup></th>
+              <th>50<sup>%</sup></th>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </div>
+      </section><!--End section about us-->
+      <section class="partners">
+        <h2 class="section-title">Наши партнеры</h2>
+        <ul>
+          <li>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/htmlacademy-logo.png" width="100" height="100" alt="HTMLAcademy">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/barbershop-logo.png" width="100" height="100" alt="Bardershop">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/pink-logo.png" width="100" height="100" alt="Pink">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/mishka-logo.png" width="100" height="100" alt="Mishka">
+            </a>
+          </li>
+      </ul>
+      </section><!--End section partners-->
     </main><!--End main content-->
-
     <footer class="main-footer">
-
-      <div class="map">
+      <section class="map">
+        <div class="map-info">
+          <h2>NЁRDS DESIGN STUDIO</h2>
+          <p>
+            191186, Санкт-Петербург, 
+            ул. Б. Конюшенная, д. 19/8
+            <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          </p>
+          <a class="btn" href="">Напишите нам</a>
+        </div>
         <!--Здесь будет карта-->
-      </div>
-
-      <div class="social">
-        <ul> 
-          <li><a href="https://www.vk.com">Вконтакте</a></li>
-          <li><a href="https://www.facebook.com">Фейсбук</a></li>
-          <li><a href="https://www.instagram.com">Интсаграм</a></li>
-        </ul>
-      </div>
+      </section>
+      <ul> 
+        <li>
+          <a href="https://www.vk.com">Вконтакте</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com">Фейсбук</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com">Интсаграм</a>
+        </li>
+      </ul>
       <div class="footer-promo">
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
-
     </footer><!--End main footer-->
-
   </body>
 </html>
