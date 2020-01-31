@@ -2,8 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс - Магазин</title>
+    <title>Магазин дизайн-студии Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -32,37 +34,63 @@
     </header><!--End main header-->
     <main>
       <h1>Магазин готовых шаблонов</h1>
-      <aside class="sidebar">
-        <!--Здесь будет форма-->
-        <!--<h2>Сетка:</h2>
-        <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
-        <label for="adaptive">Адаптивная</label>
-        <input type="radio" name="grid" id="fixed" value="fixed">
-        <label for="fixed">Фиксированная</label>
-        <input type="radio" name="grid" id="rubber" value="rubber">
-        <label for="rubber">Резиновая</label>
-        <h2>Особенности:</h2>
-        <input type="checkbox" id="slider" name="slider" value="slider" checked>
-        <label for="slider">Слайдер</label>
-        <input type="checkbox" id="advantage-block" name="advantage-block" value="advantage-block">
-        <label for="advantage-block">Блок приемуществ</label>
-        <input type="checkbox" id="news" name="news" value="news" checked>
-        <label for="news">Новости</label>
-        <input type="checkbox" id="gallery" name="gallery" value="gallery">
-        <label for="gallery">Галерея</label>
-        <input type="checkbox" id="cart" name="cart" value="cart">
-        <label for="cart">Корзина</label>
-        <input class="btn btn-sidebar" type="submit" value="Показать">-->
-      </aside><!--End sidebar-->
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form action="" method="GET">
+          <fieldset>
+            <legend>Сетка:</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
+                  <label for="adaptive">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" name="grid" id="fixed" value="fixed">
+                  <label for="fixed">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="grid" id="rubber" value="rubber">
+                  <label for="rubber">Резиновая</label>
+                </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" id="slider" name="slider" value="slider" checked>
+                  <label for="slider">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="advantage-block" name="advantage-block" value="advantage-block">
+                  <label for="advantage-block">Блок приемуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="news" name="news" value="news" checked>
+                  <label for="news">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="gallery" name="gallery" value="gallery">
+                  <label for="gallery">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="cart" name="cart" value="cart">
+                  <label for="cart">Корзина</label>
+                </li>
+              </ul>
+          </fieldset>
+          <button class="btn btn-filter" type="submit">Показать</button>
+      </form>
+      </section><!--End sidebar-->
       <section class="catalog">
-        <h2 class="section-title">Магазин предложений</h2>
+        <h2 class="visually-hidden">Магазин предложений</h2>
         <div class="catalog-item">
           <div class="item-price"><!--что бы в дальнейшем запись спрятать и показывать при наведении на картинку-->
             <a href="">Sedona</a>
             <p>Информационный сайт для туристов</p>
             <a class="btn btn-price" href="">9900 р.</a> 
           </div>
-          <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+          <img src="img/img-sedona.jpg" width="360" height="576" alt="Макет сайта Sedona">
         </div>
         <div class="catalog-item">
           <div class="item-price">
@@ -70,7 +98,7 @@
             <p>Продуктовый лендинг приложения для iOS и Android</p>
             <a class="btn btn-price" href="">9900 р.</a>  
           </div>
-          <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
+          <img src="img/img-pink.jpg" width="360" height="576" alt="Макет сайта Pink App">
         </div>
         <div class="catalog-item">
           <div class="item-price">
@@ -78,7 +106,7 @@
             <p>Сайт салона красоты. Для мужчин, да.</p>
             <a class="btn btn-price" href="">9900 р.</a>  
           </div>
-          <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
+          <img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет сайта Barbershop">
         </div>
         <div class="catalog-item">
           <div class="item-price">
@@ -86,7 +114,7 @@
             <p>Интернет магазин вязаных игрушек</p>
             <a class="btn btn-price" href="">9900 р.</a>  
           </div>
-          <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
+          <img src="img/img-mishka.jpg" width="360" height="576" alt="Макет сайта Mishka">
         </div>
         <div class="catalog-item">
           <div class="item-price">
@@ -94,7 +122,7 @@
             <p>Лендинг курсов повышения квалификации</p>
             <a class="btn btn-price" href="">9900 р.</a>  
           </div>
-          <img src="img/img-aplus.jpg" width="360" height="576" alt="APlus">
+          <img src="img/img-aplus.jpg" width="360" height="576" alt="Макет сайта APlus">
         </div>
         <div class="catalog-item">
           <div class="item-price">
@@ -102,7 +130,7 @@
             <p>Промо-сайт производителя крафтового кваса</p>
             <a class="btn btn-price" href="">9900 р.</a> 
           </div>
-          <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
+          <img src="img/img-kvast.jpg" width="360" height="576" alt="Макет сайта Кваст">
         </div>
       </section><!--End catalog-->
     </main><!--End main content-->
@@ -117,7 +145,25 @@
           </p>
           <a class="btn" href="">Напишите нам</a>
         </div>
-        <!--Здесь будет карта-->
+        <img src="img/map.png" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
+      </section>
+      <section class="write-away">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <p>Напишите нам</p>
+        <form action="" method="POST">
+          <p>
+            <label for="user-name">Ваше имя:</label>
+            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+            <label for="user-email">Ваш e-mail:</label>
+            <input id="user-email" type="email" name="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="comment-field">Тект письма:</label>
+            <textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="btn btn-write-away" type="submit">Отправить</button>
+        </form>
+        <button class="btn-close" type="button">Закрыть</button>
       </section>
       <ul> 
         <li>
@@ -134,4 +180,4 @@
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>  
-      </footer><!--End main footer-->
+    </footer><!--End main footer-->
