@@ -84,54 +84,110 @@
       </section><!--End sidebar-->
       <section class="catalog">
         <h2 class="visually-hidden">Магазин предложений</h2>
-        <div class="catalog-item">
-          <div class="item-info"><!--что бы в дальнейшем запись спрятать и показывать при наведении на картинку-->
-            <a href="">Sedona</a>
-            <p>Информационный сайт для туристов</p>
-            <a class="btn btn-price" href="">9900 р.</a> 
-          </div>
-          <img src="img/templates/sedona.jpg" width="360" height="576" alt="Макет сайта Sedona">
-        </div>
-        <div class="catalog-item">
-          <div class="item-info">
-            <a href="">Pink App</a>
-            <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <a class="btn btn-price" href="">9900 р.</a>  
-          </div>
-          <img src="img/templates/pink.jpg" width="360" height="576" alt="Макет сайта Pink App">
-        </div>
-        <div class="catalog-item">
-          <div class="item-info">
-            <a href="">Barbershop</a>
-            <p>Сайт салона красоты. Для мужчин, да.</p>
-            <a class="btn btn-price" href="">9900 р.</a>  
-          </div>
-          <img src="img/templates/barbershop.jpg" width="360" height="576" alt="Макет сайта Barbershop">
-        </div>
-        <div class="catalog-item">
-          <div class="item-info">
-            <a href="">Mishka</a>
-            <p>Интернет магазин вязаных игрушек</p>
-            <a class="btn btn-price" href="">9900 р.</a>  
-          </div>
-          <img src="img/templates/mishka.jpg" width="360" height="576" alt="Макет сайта Mishka">
-        </div>
-        <div class="catalog-item">
-          <div class="item-info">
-            <a href="">A Plus</a>
-            <p>Лендинг курсов повышения квалификации</p>
-            <a class="btn btn-price" href="">9900 р.</a>  
-          </div>
-          <img src="img/templates/aplus.jpg" width="360" height="576" alt="Макет сайта APlus">
-        </div>
-        <div class="catalog-item">
-          <div class="item-info">
-            <a href="">Кваст</a>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <a class="btn btn-price" href="">9900 р.</a> 
-          </div>
-          <img src="img/templates/kvast.jpg" width="360" height="576" alt="Макет сайта Кваст">
-        </div>
+        <section class="catalog-sort">
+          <h3 class="visually-hidden">Сортировка шаблонов</h3>
+          <form action="" method="GET">
+            <fieldset>
+              <legend>Сортировать:</legend>
+              <ul>
+                <li>
+                  <input type="radio" id="sort-by-price" name="sort-type" checked>
+                  <label for="sort-by-price">По цене</label>
+                </li>
+                <li>
+                  <input type="radio" id="sort-by-type" name="sort-type">
+                  <label for="sort-by-type">По типу</label>
+                </li>
+                <li>
+                  <input type="radio" id="sort-by-name" name="sort-type">
+                  <label for="sort-by-name">По названию</label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <input type="radio" id="sort-by-decrease" name="sort-subtype" checked>
+                  <label for="sort-by-decrease">По убыванию</label>
+                </li>
+                <li>
+                  <input type="radio" id="sort-by-increase" name="sort-subtype">
+                  <label for="sort-by-increase">По возрастанию</label>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </section>
+        <section class="catalog-items">
+          <h2 class="visually-hidden">Каталог макетов дизайн-студии Нёрдс</h2>
+          <article class="catalog-item">
+            <h3 class="visually-hidden">Шаблон сайта Sedona</h3>
+            <div class="item-info"><!--что бы в дальнейшем запись спрятать и показывать при наведении на картинку-->
+              <a href="">Sedona</a>
+              <p>Информационный сайт для туристов</p>
+              <a class="btn btn-price" href="">9900 р.</a> 
+            </div>
+            <img src="img/templates/sedona.jpg" width="360" height="576" alt="Макет сайта Sedona">
+          </article>
+          <article class="catalog-item">
+            <h3 class="visually-hidden">Шаблон сайта Pink App</h3>
+            <div class="item-info">
+              <a href="">Pink App</a>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <a class="btn btn-price" href="">9900 р.</a>  
+            </div>
+            <img src="img/templates/pink.jpg" width="360" height="576" alt="Макет сайта Pink App">
+          </article>
+          <article class="catalog-item">
+            <h3 class="visually-hidden">Шаблон сайта Barbershop</h3>
+            <div class="item-info">
+              <a href="">Barbershop</a>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <a class="btn btn-price" href="">9900 р.</a>  
+            </div>
+            <img src="img/templates/barbershop.jpg" width="360" height="576" alt="Макет сайта Barbershop">
+          </article>
+          <article class="catalog-item">
+            <h3 class="visually-hidden">Шаблон сайта Mishka</h3>
+            <div class="item-info">
+              <a href="">Mishka</a>
+              <p>Интернет магазин вязаных игрушек</p>
+              <a class="btn btn-price" href="">9900 р.</a>  
+            </div>
+            <img src="img/templates/mishka.jpg" width="360" height="576" alt="Макет сайта Mishka">
+          </article>
+          <article class="catalog-item">
+            <h3 class="visually-hidden">Шаблон сайта A Plus</h3>
+            <div class="item-info">
+              <a href="">A Plus</a>
+              <p>Лендинг курсов повышения квалификации</p>
+              <a class="btn btn-price" href="">9900 р.</a>  
+            </div>
+            <img src="img/templates/aplus.jpg" width="360" height="576" alt="Макет сайта APlus">
+          </article>
+          <article class="catalog-item">
+            <h3 class="visually-hidden">Шаблон сайта Кваст</h3>
+            <div class="item-info">
+              <a href="">Кваст</a>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <a class="btn btn-price" href="">9900 р.</a> 
+            </div>
+            <img src="img/templates/kvast.jpg" width="360" height="576" alt="Макет сайта Кваст">
+          </article>
+        </section>
+        <section class="paginator">
+          <h2 class="visually-hidden">Навигатор по страницам</h2>
+          <ul>
+            <li class="current">1</li>
+            <li>
+              <a href="">2</a>
+            </li>
+            <li>
+              <a href="">3</a>
+            </li>  
+            <li>
+              <a href="">Следующая</a>
+            </li>
+          </ul>
+        </section>
       </section><!--End catalog-->
     </main><!--End main content-->
     <footer class="main-footer">
