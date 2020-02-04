@@ -37,7 +37,7 @@
       <div class="slider">
         <div class="slides">
           <div class="slide">
-            <b>Долго, дорого скрупулезно.</b>
+            <b>Долго, дорого, скрупулезно.</b>
             <p>
               Математически выверенный дизайн для
               вашего сайта или мобильного приложения
@@ -71,7 +71,7 @@
             Мир никогда не будет прежним
             после того как увидит ваш сайт!
           </p>
-          <a class="btn btn-service" href="catalog.html">Заказать</a>
+          <a class="btn btn-web" href="catalog.html">Заказать</a>
         </div>
         <div class="service-block">
           <h3>Приложения</h3>
@@ -79,7 +79,7 @@
             Покорите топ-10 приложений в
             AppStore и Google Play
           </p>
-          <a class="btn btn-service" href="catalog.html">Заказать</a>
+          <a class="btn btn-app" href="catalog.html">Заказать</a>
         </div>
         <div class="service-block">
           <h3>Презентации</h3>
@@ -87,26 +87,31 @@
             Вы даже не подозреваете,
             насколько вы изумительны
           </p>
-          <a class="btn btn-service" href="catalog.html">Заказать</a>
+          <a class="btn btn-presentation" href="catalog.html">Заказать</a>
         </div>
       </section><!--End section services-->
       <section class="about-us">
         <h2 class="visually-hidden">О нас</h2>
-        <div class="about-us-write-up">
+        <div class="write-up">
           <b>Мы маленькая, но гордая дизайн студия из Краснодара</b>
           <p>
             Исповедуем принципы минимализма и чистоты. Ставим математический расчет
             превыше креатива. Работаем не покладая рук, как роботы.
           </p>
           <span class="about-us-text">Выполняем заказы на разработку:</span>
-          <ul class="about-us-list-develop">
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для iOS и Android</li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          <ul class="list-develop">
+            <li>
+              <span>Веб-сайтов любой сложности</span>
+            </li>
+            <li>
+              <span>Мобильных приложений для iOS и Android</span>
+              </li>
+            <li>
+              <span>Слайдшоу и видео для корпоративных презентаций</span>
+            </li>
           </ul>
         </div>
-        <div class="about-us-write-up">
-          <p>Дизайн-студия Нёрдс</p>
+        <div class="write-up">
           <table>
             <caption class="about-us-text">с 2004 года любим точность во всём:</caption>
             <tr>
@@ -151,43 +156,25 @@
     <footer class="main-footer">
       <section class="map">
         <div class="map-info">
-          <h2>NЁRDS DESIGN STUDIO</h2>
+          <h2>Nёrds design studio</h2>
           <p>
             191186, Санкт-Петербург, 
             ул. Б. Конюшенная, д. 19/8
-            <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+            <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
           </p>
           <a class="btn" href="">Напишите нам</a>
         </div>
         <img src="img/bg/map2.png" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
       </section>
-      <section class="write-us">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-        <p>Напишите нам</p>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-          <p>
-            <label for="user-name">Ваше имя:</label>
-            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-            <label for="user-email">Ваш e-mail:</label>
-            <input id="user-email" type="email" name="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="comment-field">Тект письма:</label>
-            <textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме"></textarea>
-          </p>
-          <button class="btn btn-write-away" type="submit">Отправить</button>
-        </form>
-        <button class="btn-close" type="button">Закрыть</button>
-      </section>
-      <ul> 
+      <ul class="social-list"> 
         <li>
-          <a href="https://www.vk.com">Вконтакте</a>
+          <a class="social-btn social-vk" href="https://www.vk.com">Вконтакте</a>
         </li>
         <li>
-          <a href="https://www.facebook.com">Фейсбук</a>
+          <a class="social-btn social-fb" href="https://www.facebook.com">Фейсбук</a>
         </li>
         <li>
-          <a href="https://www.instagram.com">Интсаграм</a>
+          <a class="social-btn social-in" href="https://www.instagram.com">Интсаграм</a>
         </li>
       </ul>
       <div class="footer-promo">
@@ -195,5 +182,22 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer><!--End main footer-->
+    <section class="write-us">
+      <h2 class="popup-title">Напишите нам</h2>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="comment-field">Тект письма:</label>
+          <textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="btn btn-write-us" type="submit">Отправить</button>
+      </form>
+      <button class="btn-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
