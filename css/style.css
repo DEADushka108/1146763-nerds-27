@@ -1,8 +1,9 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 24px;
   color: #000000;
   background-color: #ffffff;
@@ -11,7 +12,9 @@ body {
 a {
   text-decoration: none;
 }
+
 /* Кнопки */
+
 .btn {
   font: inherit;
   text-align: center;
@@ -23,7 +26,7 @@ a {
   border: none;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #e74246;
 }
 
@@ -32,31 +35,10 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button {
-  line-height: 18px;
-  font: inherit;
-  text-align: center;
-  color:inherit;
-  vertical-align: middle;
-  text-transform: uppercase;
-  font-weight: 500;
-  background-color: #eeeeee;
-  border: none;
-}
-
-.button:hover {
-  background-color: #dfdfdf;
-}
-
-.button:active {
-  color: rgba(0, 0, 0, 0.3);
-  background-color: #d5d5d5;
-  box-shadow:0 3px rgba(0, 1, 1, 0.1);
-}
-
 /* Навигация */
+
 .main-navigation {
-  line-height:30px;
+  line-height: 30px;
   background-color: #eeeeee;
 }
 
@@ -84,7 +66,7 @@ a {
 
 /* Main */
 
-.page-title{
+.page-title {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -111,7 +93,7 @@ a {
 .service-block h3 {
   text-transform: uppercase;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .service-block p {
@@ -127,9 +109,7 @@ a {
 }
 
 .service-block .btn-app:active {
-  background-color: #00aa62;
-
-  color: rgba(255, 255, 255, 0.3);
+  background-color: #00aa62;   
 }
 
 .service-block .btn-presentation {
@@ -142,8 +122,6 @@ a {
 
 .service-block .btn-presentation:active {
   background-color: #e5a722;
-
-  color: rgba(255, 255, 255, 0.3);
 }
 
 /* О нас */
@@ -151,9 +129,10 @@ a {
   font-size: 45px;
   line-height: 45px;
 }
+
 .about-us-text {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .about-us p,
@@ -162,13 +141,13 @@ a {
   color: #283136;
 }
 
-.write-up th{
+.write-up th {
   font-size: 45px;
   line-height: 45px;
 }
 
 /* Фильтр и сортировщик товаров */
-.filter-form fieldset{
+.filter-form fieldset {
   border: none;
 }
 
@@ -181,7 +160,7 @@ a {
 .catalog-sort .sort-title {
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -196,17 +175,33 @@ a {
   text-transform: uppercase;
 }
 
-.catalog-sort a{
+.catalog-sort a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.catalog-sort a:hover{
+.catalog-sort a:hover {
   color: rgba(0, 0, 0, 0.6)
 }
 
 .catalog-sort .sort-active,
 .catalog-sort a:active {
   color: #000000;
+}
+
+.btn-catalog {
+  line-height: 18px;
+  color: inherit;
+  background-color: #eeeeee;
+}
+
+.btn-catalog:hover {
+  background-color: #dfdfdf;
+}
+
+.btn-catalog:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px rgba(0, 1, 1, 0.1);
 }
 
 /* Каталог */
@@ -224,11 +219,10 @@ a {
 
 .item-info p {
   line-height: 18px;
-
   color:#666666;
 }
 
-.item-info .item-title:hover{
+.item-info .item-title:hover {
   color: #fb565a;
 }
 
@@ -250,9 +244,10 @@ a {
 }
 
 /* Футер */
-.map-info h2{
+
+.map-info h2 {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -268,7 +263,7 @@ a {
 .footer-promo b {
   font-size: 36px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .footer-promo p {
@@ -276,9 +271,9 @@ a {
   line-height: 22px;
 }
 
-
 /* Форма обратной связи */
-.write-us .popup-title{
+
+.write-us .popup-title {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -286,7 +281,7 @@ a {
 
 .write-us-form label {
   line-height: 18px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .write-us-form input,
