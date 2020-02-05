@@ -75,6 +75,7 @@ a {
 }
 
 /* Слайдер */
+
 .slider {
   background-color: #eeeeee;
 }
@@ -90,6 +91,7 @@ a {
 }
 
 /* Услуги*/
+
 .service-block h3 {
   text-transform: uppercase;
   font-size: 24px;
@@ -125,6 +127,7 @@ a {
 }
 
 /* О нас */
+
 .about-us b {
   font-size: 45px;
   line-height: 45px;
@@ -147,6 +150,7 @@ a {
 }
 
 /* Фильтр и сортировщик товаров */
+
 .filter-form fieldset {
   border: none;
 }
