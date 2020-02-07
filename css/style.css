@@ -142,7 +142,7 @@ a {
   margin-right: 100px;
 }
 
-.services div:last-child {
+.services :last-child {
   margin-right: 0;
 }
 
@@ -185,11 +185,11 @@ a {
   border-bottom: 1px solid #eeeeee;
 }
 
-.about-us .development {
+.development {
   width: 650px;
 }
 
-.about-us .advantages {
+.advantages {
   width: 360px;
 }
 
