@@ -189,8 +189,11 @@ a {
   width: 650px;
 }
 
-.advantages {
+.advantages table{
   width: 360px;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
 }
 
 .about-us b {
