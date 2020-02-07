@@ -103,7 +103,7 @@ a {
   min-width: 1440px;
   margin: 0 auto;
   margin-bottom: 60px;
-  padding-bottom: 116px;
+  min-height: 240px;
 }
 
 /* Слайдер */
@@ -142,7 +142,12 @@ a {
   margin-right: 100px;
 }
 
+.services div:last-child {
+  margin-right: 0;
+}
+
 .service-block p {
+  width: 245px;
   color: #283136;
 }
 
@@ -407,6 +412,7 @@ a {
 }
 
 .social-list {
+  width: 260px;
   list-style: none;
 }
 
