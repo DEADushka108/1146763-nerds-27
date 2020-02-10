@@ -51,6 +51,7 @@ a {
 
 .main-navigation .container {
   display: flex;
+  justify-content: space-between;
 }
 
 .main-logo {
@@ -59,14 +60,20 @@ a {
   margin-top: 49px;
 }
 
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
 .list-navigation {
   width: 438px;
-  margin-left: 202px;
 }
 
 .user-cart{
   width: 115px;
-  margin-left: 245px;
 }
 
 .main-navigation li {
@@ -339,9 +346,15 @@ a {
   color: inherit;
 }
 
+.item-info h3 {
+  padding-top: 30px;
+}
+
 .item-info p {
   line-height: 18px;
   color:#666666;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .item-info .item-title:hover {
@@ -432,10 +445,18 @@ a {
 
 /* Форма обратной связи */
 
+.write-us {
+  width: 960px;
+  min-height: 590px;
+  padding-left: 110px;
+  border: 1px solid #666666;
+}
+
 .write-us .popup-title {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  padding-top: 73px;
 }
 
 .write-us-form label {
@@ -446,9 +467,18 @@ a {
 .write-us-form input,
 .write-us-form textarea {
   font: inherit;
-  font-weight: normal;
+  font-weight: 400;
   color: rgba(68, 68, 68, 0.5);
   border: 2px solid #d7dcde;
+  border-radius: 2px;
+  width: 360px;
+  height: 50px;
+}
+
+.write-us-form textarea {
+  width: 760px;
+  min-height: 118px;
+  margin-top: 36px;
 }
 
 .write-us-form input:hover,
