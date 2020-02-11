@@ -471,10 +471,7 @@ a {
 
 .map {
   position: relative;
-  left: 0;
-  top: 0;
   width: 1440px;
-  height: 416px;
   margin: 0 auto;
 }
 
@@ -525,15 +522,17 @@ a {
 .footer-promo {
   margin-right: auto;
   margin-left: 139px;
+  padding: 0;
 }
 
 .social-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-left: 0;
   width: 257px;
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 .social-link {
