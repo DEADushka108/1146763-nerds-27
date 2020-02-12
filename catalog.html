@@ -42,19 +42,35 @@
         <section class="filter">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset class="filter-item">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>  
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>  
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
+                </div>
+              </div>
+            </fieldset>
             <fieldset>
               <legend>Сетка:</legend>
                 <ul>
                   <li class="filter-option">
-                    <input class="filter-input" type="radio" name="grid" id="adaptive" value="adaptive" checked>
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="adaptive" value="adaptive" checked>
                     <label for="adaptive">Адаптивная</label>
                   </li>
                   <li class="filter-option">
-                    <input class="filter-input" type="radio" name="grid" id="fixed" value="fixed">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="fixed" value="fixed">
                     <label for="fixed">Фиксированная</label>
                   </li>
                   <li class="filter-option">
-                    <input class="filter-input" type="radio" name="grid" id="responsive" value="responsive">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="responsive" value="responsive">
                     <label for="responsive">Резиновая</label>
                   </li>
               </ul>
@@ -63,23 +79,23 @@
               <legend>Особенности:</legend>
                 <ul>
                   <li class="filter-option">
-                    <input class="filter-input" type="checkbox" id="slider" name="slider" value="slider" checked>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="slider" name="slider" value="slider" checked>
                     <label for="slider">Слайдер</label>
                   </li>
                   <li class="filter-option">
-                    <input class="filter-input" type="checkbox" id="advantage-block" name="advantage-block" value="advantage-block">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="advantage-block" name="advantage-block" value="advantage-block">
                     <label for="advantage-block">Блок приемуществ</label>
                   </li>
                   <li class="filter-option">
-                    <input class="filter-input" type="checkbox" id="news" name="news" value="news" checked>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="news" name="news" value="news" checked>
                     <label for="news">Новости</label>
                   </li>
                   <li class="filter-option">
-                    <input class="filter-input" type="checkbox" id="gallery" name="gallery" value="gallery">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="gallery" name="gallery" value="gallery">
                     <label for="gallery">Галерея</label>
                   </li>
                   <li class="filter-option">
-                    <input class="filter-input" type="checkbox" id="cart" name="cart" value="cart">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="cart" name="cart" value="cart">
                     <label for="cart">Корзина</label>
                   </li>
                 </ul>
@@ -92,7 +108,7 @@
           <section class="catalog-sort">
             <h3 class="visually-hidden">Сортировка шаблонов</h3>
             <p class="sort-title">Сортировать:</p>
-            <ul>
+            <ul class="sort-list">
               <li>
                 <a class="sort-active" href="">По цене</a>
               </li>
@@ -103,10 +119,14 @@
                 <a href="">По названию</a>
               </li>
               <li>
-                <a class="sort-active" href="">По возрастанию</a>
+                <a class="sort-increase" href="">
+                  <span class="visually-hidden">По возрастанию</span>
+                </a>
               </li>
               <li>
-                <a href="">По убыванию</a>
+                <a class="sort-decrease sort-active" href="">
+                  <span class="visually-hidden">По убыванию</span>
+                </a>
               </li>
             </ul>
           </section>
@@ -186,7 +206,7 @@
                 <a class="btn btn-catalog" href="">3</a>
               </li>  
               <li>
-                <a class="btn btn-catalog" href="">Следующая</a>
+                <a class="btn btn-catalog btn-next" href="">Следующая</a>
               </li>
             </ul>
           </section>
@@ -236,6 +256,8 @@
         <p>
           <label for="user-name">Ваше имя:</label>
           <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>  
           <label for="user-email">Ваш e-mail:</label>
           <input id="user-email" type="email" name="email" placeholder="email@example.com">
         </p>
@@ -245,7 +267,9 @@
         </p>
         <button class="btn btn-write-us" type="submit">Отправить</button>
       </form>
-      <button class="btn-close" type="button">Закрыть</button>
+      <button class="btn-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section><!--End pop-up-->
   </body>
 </html>
