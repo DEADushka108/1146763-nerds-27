@@ -610,12 +610,15 @@ a {
 
 .sort-increase:hover::before,
 .sort-decrease:hover::before,
+.sort-increase:focus::before,
+.sort-decrease:focus::before {
+  opacity: 0.6;
+}
+
 .sort-increase:active::before,
 .sort-decrease:active::before,
 .sort-active.sort-increase::before,
-.sort-active.sort-decrease::before,
-.sort-increase:focus::before,
-.sort-decrease:focus::before {
+.sort-active.sort-decrease::before {
   opacity: 1;
 }
 
@@ -623,7 +626,8 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.catalog-sort a:hover {
+.catalog-sort a:hover,
+.catalog-sort a:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -742,8 +746,6 @@ a {
 .catalog-item:hover .item-info {
   z-index: 1;
 }
-
-
 
 .btn-price {
   margin: 0 auto;
@@ -914,11 +916,33 @@ a {
   line-height: 22px;
 }
 
-/* Форма обратной связи */
+/* Модальное окно */
+
+.modal-window {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index:100; 
+  opacity:0;
+  pointer-events: none;
+}
+
+.modal-window:target {
+  opacity: 1; 
+  pointer-events: auto;
+}
 
 .write-us {
   position: relative;
   width: 960px;
+  min-height: 590px;
+  background-color: #ffffff;
+  margin: 10px auto;
   min-height: 590px;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
 }

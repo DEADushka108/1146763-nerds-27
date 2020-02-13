@@ -160,7 +160,7 @@
             ул. Б. Конюшенная, д. 19/8
             <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
           </p>
-          <a class="btn btn-popup" href="">Напишите нам</a>
+          <a class="btn btn-popup" href="#open-write-us">Напишите нам</a>
         </div>
         <img src="img/bg/map2.png" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
       </section>
@@ -188,26 +188,28 @@
         </div>
       </div>
     </footer><!--End main footer-->
-    <section class="write-us">
-      <h2 class="popup-title">Напишите нам</h2>
-      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
-        <p>
-          <label for="user-name">Ваше имя:</label>
-          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p>  
-          <label for="user-email">Ваш e-mail:</label>
-          <input id="user-email" type="email" name="email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="comment-field">Тект письма:</label>
-          <textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="btn btn-write-us" type="submit">Отправить</button>
-      </form>
-      <button class="btn-close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-    </section>
+    <div class="modal-window" id="open-write-us">
+      <section class="write-us">
+        <h2 class="popup-title">Напишите нам</h2>
+        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
+          <p>
+            <label for="user-name">Ваше имя:</label>
+            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>  
+            <label for="user-email">Ваш e-mail:</label>
+            <input id="user-email" type="email" name="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="comment-field">Тект письма:</label>
+            <textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="btn btn-write-us" type="submit">Отправить</button>
+        </form>
+        <a class="btn-close" href="#">
+          <span class="visually-hidden">Закрыть</span>
+        </a>
+      </section>
+    </div>  
   </body>
 </html>
