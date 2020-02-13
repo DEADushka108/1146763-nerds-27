@@ -23,7 +23,7 @@ a {
 
 .btn {
   display: inline-block;
-  padding: 18px 54px;
+  padding: 14px 54px;
   border-radius: 2px;
   font: inherit;
   text-align: center;
@@ -97,7 +97,7 @@ a {
   content: "";
   position: absolute;
   left: 0;
-  top: 56px;
+  bottom: 8px;
   width: 15px;
   height: 15px;
   background-image: url("../img/icons/cart-icon.svg");
@@ -219,7 +219,8 @@ a {
 .btn-app,
 .btn-presentation,
 .btn-web {
-  padding: 18px 39px;
+  padding-left:39px;
+  padding-right: 39px;
 }
 
 .service-block .btn-app {
@@ -524,7 +525,11 @@ a {
 .filter-input-checkbox + label:hover:before,
 .filter-input-checkbox:checked + label:hover::before,
 .filter-input-radio + label:hover::before,
-.filter-input-radio:checked + label:hover::before {
+.filter-input-radio:checked + label:hover::before,
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:focus:checked + label::before,
+.filter-input-radio:focus + label::before,
+.filter-input-radio:focus:checked + label::before {
   opacity: 1;
 }
 
@@ -607,7 +612,9 @@ a {
 .sort-increase:active::before,
 .sort-decrease:active::before,
 .sort-active.sort-increase::before,
-.sort-active.sort-decrease::before {
+.sort-active.sort-decrease::before,
+.sort-increase:focus::before,
+.sort-decrease:focus::before {
   opacity: 1;
 }
 
@@ -686,15 +693,18 @@ a {
   opacity: 0.12;
 }
 
+.catalog-item:hover::before {
+  opacity: 1;
+}
+
 .item-info {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
+  bottom: 6px;
   background-color: #eeeeee;
   width: 360px;
-  min-height: 230px;
+  min-height: 231px;
   text-align: center;
+  z-index: -1;
 }
 
 .item-info .item-title {
@@ -705,14 +715,19 @@ a {
 }
 
 .item-info h3 {
+  padding: 0;
+  margin: 0;
   padding-top: 30px;
 }
 
 .item-info p {
+  display: block;
   line-height: 18px;
   color:#666666;
+  width: 230px;
+  padding: 0;
+  margin: 0 auto;
   padding-top: 10px;
-  padding-bottom: 30px;
 }
 
 .item-info .item-title:hover {
@@ -723,9 +738,22 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.catalog-item:hover .item-info {
+  z-index: 1;
+}
+
+
+
 .btn-price {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 43px;
   padding-left: 61px;
   padding-right: 61px;
+}
+
+.btn-price:active {
+  color: #ffffff;
 }
 
 /* Страничный навигатор */
