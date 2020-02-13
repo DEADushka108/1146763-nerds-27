@@ -33,6 +33,7 @@ a {
   font-weight: 500;
   background-color: #fb565a;
   border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -1013,6 +1014,7 @@ a {
   background-image: url("../img/icons/close-cross.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .btn-close {
