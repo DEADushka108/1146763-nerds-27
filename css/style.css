@@ -485,18 +485,21 @@ a {
   user-select: none;
 }
 
-.filter-input-checkbox + label::before {
+.filter-input-checkbox + label::before,
+.filter-input-radio + label::before {
   content: "";
   position: absolute;
-  /*позиционирование по центру блока*/
   left: -37px;
   top: 50%;
   transform: translateY(-50%);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.filter-input-checkbox + label::before {
   width: 27px;
   height: 23px;
   background-image: url("../img/icons/checkbox-off.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .filter-input-checkbox:checked + label::before {
@@ -504,16 +507,9 @@ a {
  }
 
 .filter-input-radio + label::before {
-  content: "";
-  position: absolute;
-  left: -37px;
-  top: 50%;
-  transform: translateY(-50%);
   width: 25px;
   height: 25px;
   background-image: url("../img/icons/radio-off.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .filter-input-radio:checked + label::before {
