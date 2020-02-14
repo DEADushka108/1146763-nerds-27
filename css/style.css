@@ -594,6 +594,9 @@ a {
   background-repeat: no-repeat;
 }
 
+.sort-increase::before {
+  background-image: url("../img/icons/icon-up-dir.svg");
+}
 
 .sort-decrease::before {
   right: 30px;
