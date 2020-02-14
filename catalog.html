@@ -119,12 +119,12 @@
                 <a href="">По названию</a>
               </li>
               <li>
-                <a class="sort-increase" href="">
+                <a class="sort-item sort-increase" href="">
                   <span class="visually-hidden">По возрастанию</span>
                 </a>
               </li>
               <li>
-                <a class="sort-decrease sort-active" href="">
+                <a class="sort-item sort-decrease sort-active" href="">
                   <span class="visually-hidden">По убыванию</span>
                 </a>
               </li>
@@ -250,28 +250,26 @@
         </div>
       </div>
     </footer><!--End main footer-->
-    <div class="modal-window" id="open-write-us">
-      <section class="write-us">
-        <h2 class="popup-title">Напишите нам</h2>
-        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
-          <p>
-            <label for="user-name">Ваше имя:</label>
-            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p>  
-            <label for="user-email">Ваш e-mail:</label>
-            <input id="user-email" type="email" name="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="comment-field">Тект письма:</label>
-            <textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме"></textarea>
-          </p>
-          <button class="btn btn-write-us" type="submit">Отправить</button>
-        </form>
-        <a class="btn-close" href="#">
-          <span class="visually-hidden">Закрыть</span>
-        </a>
-      </section>
-    </div>
+    <section class="write-us" id="open-write-us">
+      <h2 class="popup-title">Напишите нам</h2>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>  
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="comment-field">Тект письма:</label>
+          <textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="btn btn-write-us" type="submit">Отправить</button>
+      </form>
+      <a class="btn-close" href="">
+        <span class="visually-hidden">Закрыть</span>
+      </a>
+    </section>
   </body>
 </html>
