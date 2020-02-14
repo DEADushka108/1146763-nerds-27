@@ -516,21 +516,15 @@ a {
   background-image: url("../img/icons/radio-on.svg");
  }
 
-.filter-input-checkbox + label::before,
-.filter-input-checkbox:checked + label::before,
-.filter-input-radio + label::before,
-.filter-input-radio:checked + label::before {
+.filter-input + label::before,
+.filter-input:checked + label::before {
   opacity: 0.3;
 }
 
-.filter-input-checkbox + label:hover:before,
-.filter-input-checkbox:checked + label:hover::before,
-.filter-input-radio + label:hover::before,
-.filter-input-radio:checked + label:hover::before,
-.filter-input-checkbox:focus + label::before,
-.filter-input-checkbox:focus:checked + label::before,
-.filter-input-radio:focus + label::before,
-.filter-input-radio:focus:checked + label::before {
+.filter-input + label:hover:before,
+.filter-input:checked + label:hover::before,
+.filter-input:focus + label::before,
+.filter-input:focus:checked + label::before {
   opacity: 1;
 }
 
