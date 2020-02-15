@@ -831,6 +831,7 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
   width: 257px;
   list-style: none;
   margin: 0;
@@ -849,16 +850,34 @@ a {
   background-repeat: no-repeat;
 }
 
-.social-vk {
+.social-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.social-vk::before {
+  left: 26px;
+  width: 25px;
+  height: 15px;
   background-image: url("../img/icons/vk-icon.svg");
 }
 
-.social-fb {
+.social-fb::before {
+  left: 123px;
+  width: 12px;
+  height: 22px;
   background-image: url("../img/icons/fb-icon.svg");
 
 }
 
-.social-in {
+.social-in::before {
+  right: 29px;
+  width: 21px;
+  height: 21px;
   background-image: url("../img/icons/insta-icon.svg");
 }
 
@@ -870,16 +889,8 @@ a {
   background-color: #d7373b;
 }
 
-.social-vk:active {
-  background-image: url("../img/icons/vk-icon-op.svg");
-}
-
-.social-fb:active {
-  background-image: url("../img/icons/fb-icon-op.svg");
-}
-
-.social-in:active {
-  background-image: url("../img/icons/insta-icon-op.svg");
+.social-link:active::before {
+  opacity: 0.3;
 }
 
 .footer-promo b {
@@ -901,21 +912,24 @@ a {
 /* Модальное окно */
 
 .write-us {
+  top: 0;
+  left: 0;
   margin: 0;
   padding: 0;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.3);
-  z-index:100; 
-  opacity:0;
+  z-index: 100; 
+  opacity: 0;
   pointer-events: none;
 }
 
 .write-us:target {
   position: relative;
+  top: 0;
+  left: 0;
   width: 960px;
   min-height: 590px;
-  background-color: #dad2d2;
-  margin: 10px auto;
+  background-color: #ffffff;
+  margin: 100px auto;
   min-height: 590px;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
   opacity: 1; 
