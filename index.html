@@ -38,34 +38,41 @@
     </header><!--End main header-->
     <main>
       <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
-      <div class="slider container"><!--Пока обернул слайдер в контейнер что б не сильно выделялся-->
-        <div class="slides">
-          <div class="slide">
+      <div class="slider">
+        <ul class="slide-list">
+          <li class="slide active">
             <b>Долго, дорого,<br> скрупулезно.</b>
             <p>
               Математически выверенный дизайн<br>
               для вашего сайта или мобильного приложения
             </p>
             <a class="btn btn-slider" href="">Узнать больше</a>
-          </div>
-          <div class="slide">
+          </li>
+          <li class="slide">
             <b>Любим математику как никто другой</b>
             <p>
               Никакого креатива, только математические
               формулы для расёта идеальных пропорций.
             </p>
             <a class="btn btn-slider" href="">Узнать больше</a>
-          </div>
-          <div class="slide">
+          </li>
+          <li class="slide">
             <b>Только ночь,<br> только хардкор</b>
             <p>
               Работать днем, как все? Мы против этого.<br>
               Ближе к полуночи работа только начинается.
             </p>
             <a class="btn btn-slider" href="">Узнать больше</a>
-          </div>
+          </li>
+        </ul>
+        <div class="slider-controls">
+          <input type="radio" id="slide-1" class="slider-toggle" name="toggle" checked>
+          <label for="slide-1" class="toggle-label"></label>
+          <input type="radio" id="slide-2" class="slider-toggle" name="toggle">
+          <label for="slide-2" class="toggle-label"></label>
+          <input type="radio" id="slide-3" class="slider-toggle" name="toggle">
+          <label for="slide-3" class="toggle-label"></label>
         </div>
-        <!--Здесь будет слайдер-->
       </div><!--End main slider-->
       <section class="services container">
         <h2 class="visually-hidden">Услуги</h2>
