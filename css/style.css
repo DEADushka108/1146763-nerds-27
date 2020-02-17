@@ -1067,11 +1067,11 @@ a {
 
 .write-us-form input {
   padding-left: 15px;
+  padding-right: 15px;
 }
 
 .write-us-form textarea {
-  padding-left: 15px;
-  padding-top: 14px;
+  padding: 14px 15px;
   width: 760px;
   min-height: 118px;
 }
