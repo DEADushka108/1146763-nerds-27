@@ -80,6 +80,7 @@ a {
 .list-navigation {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: flex-end; 
   width: 438px;
 }
@@ -173,7 +174,7 @@ a {
 .slide {
   display: none;
   width: 1200px;
-  height: 424px;
+  min-height: 424px;
   box-sizing: border-box;
   margin: 0 auto;
   padding-top: 15px;
