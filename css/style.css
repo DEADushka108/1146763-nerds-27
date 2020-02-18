@@ -101,7 +101,7 @@ a {
   content: "";
   position: absolute;
   left: 1px;
-  bottom: 5px;
+  bottom: 12px;
   width: 15px;
   height: 15px;
   background-image: url("../img/icons/cart-icon.svg");
@@ -113,12 +113,15 @@ a {
   text-transform: uppercase;
   list-style: none;
   font-weight: 500;
-  padding: 12px 0;
 }
 
-.main-navigation a {
+.list-navigation a,
+.user-cart a {
   display: block;
   color: inherit;
+  padding-top: 12px;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 .main-navigation a:hover {
@@ -145,10 +148,11 @@ a {
   color: #000000;
   background-color: #eeeeee;
   min-width: 1440px;
-  margin: 0 auto;
-  margin-bottom: 60px;
-  padding-top: 64px;
-  padding-bottom: 116px;
+  margin-top: 0;
+  margin-left: -55px;
+  margin-bottom: 56px;
+  padding-top: 77px;
+  padding-bottom: 108px;
 }
 
 /* Слайдер */
@@ -513,11 +517,12 @@ a {
 .filter-form fieldset {
   border: none;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 33px;
   padding: 0;
 }
 
 .range-filter {
+  margin-bottom: 24px;
   margin-top: 49px;
 }
 
@@ -665,6 +670,10 @@ a {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.filter-form legend {
+  padding-bottom: 0;
 }
 
 .filter-input:disabled + label {
@@ -870,8 +879,8 @@ a {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 43px;
-  padding-left: 61px;
-  padding-right: 61px;
+  padding-left: 62px;
+  padding-right: 62px;
 }
 
 .btn-price:active {
