@@ -23,8 +23,8 @@ a {
 
 .btn {
   display: inline-block;
-  padding: 14px 54px;
-  border-radius: 2px;
+  padding: 14px 55px 13px 54px;
+  border-radius: 4px;
   font: inherit;
   text-align: center;
   color: #ffffff;
@@ -48,20 +48,20 @@ a {
 /* Навигация */
 
 .main-navigation {
-  line-height: 30px;
   background-color: #eeeeee;
-  padding-bottom: 18px;
 }
 
 .main-navigation .container {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 114px;
 }
 
 .main-logo {
   display: block;
   width: 160px;
   height: 65px;
+  margin-right: 202px;
 }
 
 .logo:hover {
@@ -75,32 +75,33 @@ a {
 .main-navigation ul {
   padding: 0;
   margin: 0;
+  margin-top: 64px;
 }
 
 .list-navigation {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-end; 
-  width: 438px;
+  flex-wrap: wrap; 
+  width: 439px;
 }
 
 .user-cart {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .user-cart .cart-link {
   position: relative;
   padding-left: 41px;
+  margin-left: 245px;
 }
 
 .cart-link::before {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 8px;
+  left: 1px;
+  bottom: 5px;
   width: 15px;
   height: 15px;
   background-image: url("../img/icons/cart-icon.svg");
@@ -112,11 +113,11 @@ a {
   text-transform: uppercase;
   list-style: none;
   font-weight: 500;
+  padding: 12px 0;
 }
 
 .main-navigation a {
   display: block;
-  padding-top: 49px;
   color: inherit;
 }
 
@@ -182,7 +183,7 @@ a {
   padding-bottom: 0px;
   padding-left: 20px;
   background-color: #eeeeee;
-  background-position: 451px 11px;
+  background-position: 451px 18px;
   background-repeat: no-repeat;
 }
 
@@ -204,13 +205,13 @@ a {
   line-height: 55px;
   font-size: 55px;
   font-weight: 500;
-  padding-top: 47px;
-  padding-bottom: 28px;
+  padding-top: 63px;
+  padding-bottom: 9px;
 }
 
 .slide p {
   width: 409px;
-  padding-bottom: 28px;
+  padding-bottom: 24px;
   color: #283136;
 }
 
@@ -255,6 +256,10 @@ a {
 /* Услуги*/
 
 .service-block h3 {
+  padding: 0;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 4px;
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 700;
@@ -270,7 +275,7 @@ a {
   position: relative;
   padding-top: 146px;
   width: 300px;
-  margin-right: 100px;
+  margin-right: 155px;
 }
 
 .service-block::before {
@@ -305,6 +310,7 @@ a {
 
 .service-block p {
   width: 245px;
+  padding-bottom: 15px;
   color: #283136;
 }
 
@@ -312,7 +318,7 @@ a {
 .btn-presentation,
 .btn-web {
   padding-left: 39px;
-  padding-right: 39px;
+  padding-right: 40px;
 }
 
 .service-block .btn-app {
@@ -344,8 +350,8 @@ a {
 .about-us {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
-  padding-bottom: 76px;
+  margin-top: 35px;
+  padding-bottom: 74px;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -356,13 +362,13 @@ a {
 
 .advantages {
   position: relative;
-  padding-top: 208px;
+  padding-top: 249px;
 }
 
 .about-us .advantages::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
   width: 360px;
   height: 208px;
@@ -376,9 +382,11 @@ a {
   padding: 0;
   margin: 0;
   border-collapse: collapse;
+  text-align: left;
 }
 
 .about-us b {
+  font-weight: 500;
   font-size: 45px;
   line-height: 45px;
 }
@@ -394,15 +402,22 @@ a {
   color: #283136;
 }
 
+.about-us p {
+  padding-top: 18px;
+  padding-bottom: 21px;
+}
+
 .list-develop {
   list-style: none;
   margin: 0;
   padding: 0;
+ 
 }
 
 .list-develop li {
   position: relative;
   padding-left: 35px;
+  margin-top: 24px;
 }
 
 .list-develop li::before {
@@ -417,8 +432,19 @@ a {
 }
 
 .advantages th {
+  width: 120px;
+  padding-top: 41px;
   font-size: 45px;
   line-height: 45px;
+}
+
+.advantages td {
+  line-height: 18px;
+  padding-top: 17px;
+}
+
+.advantages sup {
+  font-size: 28px;
 }
 
 /* Партнёры */
@@ -430,17 +456,22 @@ a {
 
 .partners-list {
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around;
   align-items: center;
   list-style: none;
-  height: 180px;
+  min-height: 148px;
   padding: 0;
 }
 
 .partners-list li {
   position: relative;
-  width: 100%;
+  width: 298px;
   text-align: center;
+}
+
+.partners-list li:first-child,
+.partners-list li:last-child {
+  width: 279px;
 }
 
 .partners-list li:not(:first-of-type)::after {
@@ -792,7 +823,9 @@ a {
   background-color: #eeeeee;
   width: 360px;
   min-height: 231px;
+  max-height: 576px;
   text-align: center;
+  overflow-y: auto;
   z-index: -1;
 }
 
@@ -814,6 +847,8 @@ a {
   line-height: 18px;
   color: #666666;
   width: 230px;
+  max-height: 383px;
+  overflow-y: auto;
   padding: 0;
   margin: 0 auto;
   padding-top: 10px;
@@ -867,10 +902,11 @@ a {
 }
 
 /* Футер */
+/* Карта */
 
 .map {
   position: relative;
-  width: 1360px;
+  width: 1440px;
   height: 416px;
   margin: 0 auto;
   overflow: hidden;
@@ -915,6 +951,8 @@ a {
   padding-left: 45px;
   margin-left: 50px;
 }
+
+ /* Соцсети */
 
 .social-and-promo {
   display: flex;
@@ -1008,11 +1046,8 @@ a {
 
 /* Модальное окно */
 
-.modal-hidden {
-  display: none;
-}
-
 .write-us {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1023,6 +1058,10 @@ a {
   min-height: 590px;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
   z-index: 2;
+}
+
+.modal-show {
+  display: block;
 }
 
 .write-us .popup-title {
