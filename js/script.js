@@ -1,9 +1,9 @@
 /* Модальное окно */
 
-function toggleHidden (btn, section) {
+function showPopup (btn, section) {
   btn.addEventListener('click', function (btn) {
     btn.preventDefault();
-    section.classList.toggle('modal-hidden');
+    section.classList.toggle('modal-show');
   });
 }
 
@@ -11,8 +11,8 @@ let btnPopUp = document.querySelector('.btn-popup');
 let btnWriteUsClose = document.querySelector('.btn-close');
 let writeUs = document.querySelector('.write-us');
 
-toggleHidden(btnPopUp, writeUs);
-toggleHidden(btnWriteUsClose, writeUs);
+showPopup(btnPopUp, writeUs);
+showPopup(btnWriteUsClose, writeUs);
 
 /*Переключатель слайдера*/ 
 
