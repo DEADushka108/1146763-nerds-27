@@ -58,7 +58,7 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Сетка:</legend>
                 <ul>
                   <li class="filter-option">
@@ -75,7 +75,7 @@
                   </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Особенности:</legend>
                 <ul>
                   <li class="filter-option">
@@ -108,7 +108,7 @@
           <section class="catalog-sort">
             <h3 class="visually-hidden">Сортировка шаблонов</h3>
             <p class="sort-title">Сортировать:</p>
-            <ul class="sort-list">
+            <ul class="sort-list sort-category">
               <li>
                 <a class="sort-active" href="">По цене</a>
               </li>
@@ -118,13 +118,15 @@
               <li>
                 <a href="">По названию</a>
               </li>
+            </ul>
+            <ul class="sort-list sort-type">
               <li>
-                <a class="sort-item sort-increase" href="">
+                <a class="sort-item sort-ascending" href="">
                   <span class="visually-hidden">По возрастанию</span>
                 </a>
               </li>
               <li>
-                <a class="sort-item sort-decrease sort-active" href="">
+                <a class="sort-item sort-descending sort-active" href="">
                   <span class="visually-hidden">По убыванию</span>
                 </a>
               </li>
@@ -138,7 +140,7 @@
                   <a class="item-title" href="">Sedona</a>
                 </h3>
                 <p>Информационный сайт для туристов</p>
-                <a class="btn btn-price" href="">9900 &#8381.</a> 
+                <a class="btn btn-price" href="">9 900 руб.</a> 
               </div>
               <img src="img/templates/sedona.jpg" width="360" height="576" alt="Макет сайта Sedona">
             </article>
@@ -148,7 +150,7 @@
                   <a class="item-title" href="">Pink App</a>
                 </h3>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <a class="btn btn-price" href="">9900 &#8381.</a>  
+                <a class="btn btn-price" href="">9 900 руб.</a>  
               </div>
               <img src="img/templates/pink.jpg" width="360" height="576" alt="Макет сайта Pink App">
             </article>
@@ -158,7 +160,7 @@
                   <a class="item-title" href="">Barbershop</a>
                 </h3>
                 <p>Сайт салона красоты. Для мужчин, да.</p>
-                <a class="btn btn-price" href="">9900 &#8381.</a>  
+                <a class="btn btn-price" href="">9 900 руб.</a>  
               </div>
               <img src="img/templates/barbershop.jpg" width="360" height="576" alt="Макет сайта Barbershop">
             </article>
@@ -168,7 +170,7 @@
                   <a class="item-title" href="">Mishka</a>
                 </h3>
                 <p>Интернет магазин вязаных игрушек</p>
-                <a class="btn btn-price" href="">9900 &#8381.</a>  
+                <a class="btn btn-price" href="">9 900 руб.</a>  
               </div>
               <img src="img/templates/mishka.jpg" width="360" height="576" alt="Макет сайта Mishka">
             </article>
@@ -178,7 +180,7 @@
                   <a class="item-title" href="">A Plus</a>
                 </h3>
                 <p>Лендинг курсов повышения квалификации</p>
-                <a class="btn btn-price" href="">9900 &#8381.</a>  
+                <a class="btn btn-price" href="">9 900 руб.</a>  
               </div>
               <img src="img/templates/aplus.jpg" width="360" height="576" alt="Макет сайта APlus">
             </article>
@@ -188,7 +190,7 @@
                   <a class="item-title" href="">Кваст</a>
                 </h3>
                 <p>Промо-сайт производителя крафтового кваса</p>
-                <a class="btn btn-price" href="">9900 &#8381.</a> 
+                <a class="btn btn-price" href="">9 900 руб.</a> 
               </div>
               <img src="img/templates/kvast.jpg" width="360" height="576" alt="Макет сайта Кваст">
             </article>
@@ -224,7 +226,7 @@
           </p>
           <a class="btn btn-popup" href="write-us.html">Напишите нам</a>
         </div>
-        <img src="img/bg/map2.png" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
+        <div class="map-img"></div>
       </section>
       <div class="social-and-promo container">
         <ul class="social-list"> 
@@ -250,7 +252,7 @@
         </div>
       </div>
     </footer><!--End main footer-->
-    <section class="write-us modal-hidden">
+    <section class="write-us">
       <h2 class="popup-title">Напишите нам</h2>
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
         <p>
