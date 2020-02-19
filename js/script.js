@@ -22,6 +22,8 @@ function toggleSlides (toggles, slides) {
       for (let j = 0; j < slides.length; j++) {
         slides[j].classList.remove('active');
         slides[i].classList.add('active');
+        toggles[j].classList.remove('active-toggle');
+        toggles[i].classList.add('active-toggle');
         }
       });
   }
