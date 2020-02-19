@@ -18,7 +18,7 @@ toggleHidden(btnWriteUsClose, writeUs);
 
 function toggleSlides (toggles, slides) {
   for (let i = 0; i < toggles.length; i++) {
-    toggles[i].addEventListener('change', function() {
+    toggles[i].addEventListener('click', function() {
       for (let j = 0; j < slides.length; j++) {
         slides[j].classList.remove('active');
         slides[i].classList.add('active');
