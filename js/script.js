@@ -1,3 +1,10 @@
+let btnPopUp = document.querySelector('.btn-popup');
+let btnWriteUsClose = document.querySelector('.btn-close');
+let writeUs = document.querySelector('.write-us');
+let slider = document.querySelector('.slide-list');
+let totalSlides = slider.children;
+let totalToggles = document.querySelectorAll('.slider-toggle');
+
 /* Модальное окно */
 
 function showPopup (btn, section) {
@@ -6,13 +13,6 @@ function showPopup (btn, section) {
     section.classList.toggle('modal-show');
   });
 }
-
-let btnPopUp = document.querySelector('.btn-popup');
-let btnWriteUsClose = document.querySelector('.btn-close');
-let writeUs = document.querySelector('.write-us');
-
-showPopup(btnPopUp, writeUs);
-showPopup(btnWriteUsClose, writeUs);
 
 /*Переключатель слайдера*/ 
 
@@ -29,8 +29,20 @@ function toggleSlides (toggles, slides) {
   }
 }
 
-let slider = document.querySelector('.slide-list');
-let totalSlides = slider.children;
-let totalToggles = document.querySelectorAll('.slider-toggle');
-
+showPopup(btnPopUp, writeUs);
+showPopup(btnWriteUsClose, writeUs);
 toggleSlides(totalToggles, totalSlides);
+
+function initMap() {
+  var coordinates = {lat: 59.938955,  lng: 30.323062},
+  
+      map = new google.maps.Map(document.getElementById('map-img'), {
+          center: coordinates
+      });
+
+      marker = new google.maps.Marker({
+        position: coordinates,
+        map: map
+    });
+}
+
