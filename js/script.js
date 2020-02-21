@@ -32,17 +32,3 @@ function toggleSlides (toggles, slides) {
 showPopup(btnPopUp, writeUs);
 showPopup(btnWriteUsClose, writeUs);
 toggleSlides(totalToggles, totalSlides);
-
-function initMap() {
-  var coordinates = {lat: 59.938955,  lng: 30.323062},
-  
-      map = new google.maps.Map(document.getElementById('map-img'), {
-          center: coordinates
-      });
-
-      marker = new google.maps.Marker({
-        position: coordinates,
-        map: map
-    });
-}
-
