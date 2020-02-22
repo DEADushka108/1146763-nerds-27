@@ -44,7 +44,7 @@ btnPopUp.addEventListener("click", function (evt) {
   evt.preventDefault();
   writeUs.classList.add("modal-show");
     
-  if (storage) {
+  if (storageName && storageEmail) {
     userName.value = storageName;
     email.value = storageEmail;
   } else {
