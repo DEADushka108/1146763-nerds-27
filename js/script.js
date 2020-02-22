@@ -6,9 +6,11 @@ let writeUs = document.querySelector(".write-us");
 let form = writeUs.querySelector("form");
 let userName = writeUs.querySelector("[name=name]");
 let email = writeUs.querySelector("[name=email]");
+let text = writeUs.querySelector("[name=comment]")
   
 let isStorageSupport = true;
-let storage = "";
+let storageName = "";
+let starageEmail = "";
 
 let slider = document.querySelector(".slide-list");
 let totalSlides = slider.children;
@@ -32,7 +34,8 @@ function toggleSlides (toggles, slides) {
 toggleSlides(totalToggles, totalSlides);
 
 try {
-  storage = localStorage.getItem("userName");
+  storageName = localStorage.getItem("userName");
+  storageEmail = localStorage.getItem("email");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -42,10 +45,10 @@ btnPopUp.addEventListener("click", function (evt) {
   writeUs.classList.add("modal-show");
     
   if (storage) {
-    userName.value = storage;
-    email.focus();
+    userName.value = storageName;
+    email.value = storageEmail;
   } else {
-    userName.focus();
+    text.focus();
     }
 });
   
