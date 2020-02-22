@@ -1122,10 +1122,9 @@ a {
 .write-us {
   display: none;
   position: fixed;
-  top: 50%;
+  bottom: 100px;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin-left: -480px;
   width: 960px;
   min-height: 590px;
   background-color: #ffffff;
@@ -1134,8 +1133,53 @@ a {
   z-index: 2;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(2000px);
+  }
+
+  70% {
+    transform: translateY(-30px);
+  }
+
+  90% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-show {
   display: block;
+  animation: bounce 200ms;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .write-us .popup-title {
@@ -1144,8 +1188,8 @@ a {
   font-weight: 500;
   margin: 0;
   padding: 0;
-  padding-top: 73px;
-  margin-left: 100px;
+  padding-top: 66px;
+  margin-left: 98px;
 }
 
 .write-us-form {
@@ -1154,7 +1198,7 @@ a {
   flex-wrap: wrap;
   margin: 0;
   margin-bottom: 36px;
-  margin-top: 45px;
+  margin-top: 26px;
   width: 760px;
   margin-left: 100px;
   margin-right: 100px;
@@ -1162,8 +1206,8 @@ a {
 
 .write-us-form label {
   display: block;
-  padding-bottom: 12px;
-  line-height: 18px;
+  padding-bottom: 11px;
+  line-height: 17px;
   font-weight: 700;
 }
 
@@ -1185,7 +1229,7 @@ a {
 }
 
 .write-us-form textarea {
-  padding: 14px 15px;
+  padding: 8px 13px;
   width: 760px;
   min-height: 118px;
 }
@@ -1209,7 +1253,9 @@ a {
 }
 
 .btn-write-us {
-  margin-top: 10px;
+  margin-top: 28px;
+  padding-left: 85px;
+  padding-right: 83px;
 }
 
 .btn-close {
