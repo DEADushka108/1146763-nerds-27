@@ -1,14 +1,14 @@
 
-var btnPopUp = document.querySelector(".btn-popup");
-var btnWriteUsClose = document.querySelector(".btn-close");
-var writeUs = document.querySelector(".write-us");
+let btnPopUp = document.querySelector(".btn-popup");
+let btnWriteUsClose = document.querySelector(".btn-close");
+let writeUs = document.querySelector(".write-us");
 
-var form = writeUs.querySelector("form");
-var userName = writeUs.querySelector("[name=name]");
-var email = writeUs.querySelector("[name=email]");
+let form = writeUs.querySelector("form");
+let userName = writeUs.querySelector("[name=name]");
+let email = writeUs.querySelector("[name=email]");
   
-var isStorageSupport = true;
-var storage = "";
+let isStorageSupport = true;
+let storage = "";
 
 let slider = document.querySelector(".slide-list");
 let totalSlides = slider.children;
