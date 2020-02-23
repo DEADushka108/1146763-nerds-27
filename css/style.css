@@ -176,6 +176,7 @@ a {
 
 .slide-list .active {
   display: block;
+  animation: opacity 0.6s;
 }
 
 .slide {
@@ -222,7 +223,7 @@ a {
 }
 
 .btn-slider {
-  margin-bottom: 80px;
+  margin-bottom: 79px;
 }
 
 .slider-controls {
@@ -266,7 +267,7 @@ a {
 .service-block h3 {
   padding: 0;
   margin: 0;
-  padding-top: 28px;
+  padding-top: 29px;
   padding-bottom: 4px;
   text-transform: uppercase;
   font-size: 24px;
@@ -274,14 +275,14 @@ a {
 }
 
 .services {
+  position: relative;
   display: flex;
-  padding-bottom: 80px;
-  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 82px;
 }
 
 .service-block {
   position: relative;
-  padding-top: 146px;
+  padding-top: 145px;
   width: 300px;
   margin-right: 155px;
 }
@@ -289,7 +290,7 @@ a {
 .service-block::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 1px;
   left: 0;
   width: 300px;
   height: 146px;
@@ -356,10 +357,10 @@ a {
 /* О нас */
 
 .about-us {
+  position: relative;
   display: flex;
-  margin-top: 35px;
-  padding-bottom: 74px;
-  border-bottom: 1px solid #eeeeee;
+  margin-top: 34px;
+  padding-bottom: 76px;
 }
 
 .development {
@@ -376,7 +377,7 @@ a {
 .about-us .advantages::before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 6px;
   left: 0;
   width: 360px;
   height: 208px;
@@ -411,8 +412,8 @@ a {
 }
 
 .about-us p {
-  padding-top: 19px;
-  padding-bottom: 21px;
+  padding-top: 18px;
+  padding-bottom: 22px;
 }
 
 .list-develop {
@@ -432,10 +433,10 @@ a {
   content: "";
   position: absolute;
   bottom: 50%;
-  left: 0;
+  left: 1px;
   height: 2px;
   width: 25px;
-  background-color: #fb565a;
+  border-bottom: 2px solid #fb565a;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
 }
@@ -449,7 +450,7 @@ a {
 
 .advantages td {
   line-height: 18px;
-  padding-top: 17px;
+  padding-top: 18px;
 }
 
 .advantages sup {
@@ -459,10 +460,10 @@ a {
 /* Партнёры */
 
 .partners {
+  position: relative;
   width: 1240px;
   margin: 0 auto;
-  margin-bottom: 21px;
-  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 25px;
 }
 
 .partners-list {
@@ -474,7 +475,7 @@ a {
   list-style: none;
   padding-top: 46px;
   padding-right: 0;
-  padding-bottom: 36px;
+  padding-bottom: 37px;
   padding-left: 0;
   margin: 0;
   margin-right: 40px;
@@ -517,6 +518,22 @@ a {
 
 .partners-logo:active {
   opacity: 0.1;
+}
+
+.services::after,
+.about-us::after,
+.partners::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1160px;
+  height: 2px;
+  background-color: #eeeeee;
+}
+
+.partners::after {
+  left: 20px;
 }
 
 /* Фильтр и сортировщик товаров */
@@ -829,6 +846,11 @@ a {
   margin-bottom: 29px;
 }
 
+.catalog-item img {
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 1, 1, 0.1);
+}
+
 .catalog-items {
   display: flex;
   justify-content: space-between;
@@ -858,6 +880,10 @@ a {
 
 .catalog-item:hover::before {
   opacity: 1;
+}
+
+.catalog-item:hover img {
+  border: none;
 }
 
 .item-info {
@@ -930,7 +956,7 @@ a {
 .pagination {
   width: 760px;
   margin: 0;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 .pagination ul {
@@ -1120,7 +1146,7 @@ a {
 .write-us {
   display: none;
   position: fixed;
-  bottom: 100px;
+  bottom: 200px;
   left: 50%;
   margin-left: -480px;
   width: 960px;
@@ -1168,6 +1194,15 @@ a {
   60%,
   80% {
     transform: translateX(10px);
+  }
+}
+
+@keyframes opacity {
+  0% {
+     opacity: 0;
+  }
+  100% {
+     opacity: 1;
   }
 }
 
