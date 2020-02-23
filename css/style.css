@@ -226,17 +226,18 @@ a {
 }
 
 .slider-controls {
+  display: flex;
+  justify-content: space-between;
   position: absolute;
-  bottom: 98px;
+  bottom: 96px;
   left: 50%;
-  -webkit-transform: translateX(-70px);
-          transform: translateX(-70px);
+  width: 88px;
+  -webkit-transform: translateX(-62px);
+          transform: translateX(-62px);
 }
 
 .slider-controls button {
   position: relative;
-  display: inline-block;
-  margin: 0 7px;
   width: 18px;
   height: 18px;
   box-sizing: border-box;
