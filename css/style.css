@@ -232,8 +232,8 @@ a {
   bottom: 96px;
   left: 50%;
   width: 88px;
-  -webkit-transform: translateX(-62px);
-          transform: translateX(-62px);
+  -webkit-transform: translateX(-64px);
+          transform: translateX(-64px);
 }
 
 .slider-controls button {
