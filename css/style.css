@@ -24,7 +24,8 @@ a {
 .btn {
   display: inline-block;
   box-sizing: border-box;
-  padding: 14px 55px 13px 55px;
+  min-height: 50px;
+  padding: 14px 52px 13px 52px;
   border-radius: 3px;
   font: inherit;
   text-align: center;
@@ -102,7 +103,7 @@ a {
 .cart-link::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: -1px;
   bottom: 11px;
   width: 15px;
   height: 15px;
@@ -222,6 +223,7 @@ a {
 }
 
 .btn-slider {
+  width: 240px;
   margin-bottom: 79px;
 }
 
@@ -326,6 +328,7 @@ a {
 .btn-app,
 .btn-presentation,
 .btn-web {
+  width: 160px;
   padding-left: 39px;
   padding-right: 40px;
 }
@@ -1000,7 +1003,8 @@ a {
   padding-bottom: 40px;
   padding-left: 50px;
   background-color: #ffffff;
-  transform: translateX(-600px);
+  -webkit-transform: translateX(-600px);
+          transform: translateX(-600px);
   z-index: 2;
 }
 
@@ -1046,6 +1050,8 @@ a {
 }
 
 .btn-popup {
+  min-width: 219px;
+  min-height: 50px;
   margin-top: 18px;
   padding-left: 44px;
   padding-right: 44px;
@@ -1159,32 +1165,60 @@ a {
   background-color: #ffffff;
   min-height: 590px;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 2;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translate(-50%, 200%);
+            transform: translate(-50%, 200%);
+  }
+
+  70% {
+    -webkit-transform: translate(-50%, -35%);
+            transform: translate(-50%, -35%);
+  }
+
+  90% {
+    -webkit-transform: translate(-50%, -55%);
+            transform: translate(-50%, -55%);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 @keyframes bounce {
   0% {
-    transform: translate(-50%, 200%);
+    -webkit-transform: translate(-50%, 200%);
+            transform: translate(-50%, 200%);
   }
 
   70% {
-    transform: translate(-50%, -35%);
+    -webkit-transform: translate(-50%, -35%);
+            transform: translate(-50%, -35%);
   }
 
   90% {
-    transform: translate(-50%, -55%);
+    -webkit-transform: translate(-50%, -55%);
+            transform: translate(-50%, -55%);
   }
 
   100% {
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 
   10%,
@@ -1192,24 +1226,53 @@ a {
   50%,
   70%,
   90% {
-    transform: translate(calc(-50% - 10px), -50%);
+    -webkit-transform: translate(calc(-50% - 10px), -50%);
+            transform: translate(calc(-50% - 10px), -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translate(calc(-50% + 10px), -50%);
+    -webkit-transform: translate(calc(-50% + 10px), -50%);
+            transform: translate(calc(-50% + 10px), -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate(calc(-50% - 10px), -50%);
+            transform: translate(calc(-50% - 10px), -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate(calc(-50% + 10px), -50%);
+            transform: translate(calc(-50% + 10px), -50%);
   }
 }
 
 .modal-show {
   display: block;
-  animation: bounce 0.2s;
+  -webkit-animation: bounce 0.2s;
+          animation: bounce 0.2s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .write-us .popup-title {
