@@ -1036,7 +1036,6 @@ a {
   background-image: url("../img/bg/map2.png");
   background-repeat: no-repeat;
   background-position: center;
-  transform: translateX(-20px);
 }
 
 .btn-popup {
