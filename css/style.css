@@ -994,16 +994,16 @@ a {
 .map-info {
   position: absolute;
   box-sizing: border-box;
+  top: 109px;
   left: 50%;
   width: 319px;
   min-height: 308px;
-  margin-top: 54px;
-  margin-left: -600px;
   padding-top: 17px;
   padding-right: 50px;
   padding-bottom: 40px;
   padding-left: 50px;
   background-color: #ffffff;
+  transform: translateX(-600px);
   z-index: 2;
 }
 
@@ -1147,39 +1147,39 @@ a {
 .write-us {
   display: none;
   position: fixed;
-  bottom: 200px;
+  top: 50%;
   left: 50%;
-  margin-left: -480px;
   width: 960px;
   min-height: 590px;
   background-color: #ffffff;
   min-height: 590px;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+  transform: translate(-50%, -50%);
   z-index: 2;
 }
 
 @keyframes bounce {
   0% {
-    transform: translateY(2000px);
+    transform: translate(-50%, 200%);
   }
 
   70% {
-    transform: translateY(-30px);
+    transform: translate(-50%, -35%);
   }
 
   90% {
-    transform: translateY(10px);
+    transform: translate(-50%, -55%);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, -50%);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translate(-50%, -50%);
   }
 
   10%,
@@ -1187,20 +1187,20 @@ a {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translate(calc(-50% - 10px), -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translate(calc(-50% + 10px), -50%);
   }
 }
 
 .modal-show {
   display: block;
-  animation: bounce 200ms;
+  animation: bounce 0.2s;
 }
 
 .modal-error {
