@@ -984,7 +984,7 @@ a {
 /* Футер */
 /* Карта */
 
-.map {
+.map .container {
   position: relative;
   padding-top: 55px;
   padding-bottom: 16px;
@@ -995,7 +995,7 @@ a {
   position: absolute;
   box-sizing: border-box;
   top: 109px;
-  left: 50%;
+  left: 0;
   width: 319px;
   height: 308px;
   padding-top: 17px;
@@ -1003,8 +1003,6 @@ a {
   padding-bottom: 40px;
   padding-left: 50px;
   background-color: #ffffff;
-  -webkit-transform: translateX(-600px);
-          transform: translateX(-600px);
   z-index: 2;
 }
 
