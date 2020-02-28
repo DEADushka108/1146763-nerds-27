@@ -16,8 +16,6 @@ let slider = document.querySelector(".slide-list");
 let totalSlides = slider.children;
 let totalToggles = document.querySelectorAll(".slider-toggle");
 
-/*Переключатель слайдера*/ 
-
 function toggleSlides (toggles, slides) {
   for (let i = 0; i < toggles.length; i++) {
     toggles[i].addEventListener('click', function() {
