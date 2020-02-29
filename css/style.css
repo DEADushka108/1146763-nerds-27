@@ -504,8 +504,8 @@ a {
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
-  -webkit-transform: translateY(50%) translateY(-4px);
-          transform: translateY(50%) translateY(-4px);
+  -webkit-transform: translateY(50%) translateY(-3px);
+          transform: translateY(50%) translateY(-3px);
 }
 
 .partners-logo {
