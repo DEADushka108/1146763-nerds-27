@@ -939,7 +939,8 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.catalog-item:hover .item-info {
+.catalog-item:hover .item-info,
+.item-info:focus-within {
   z-index: 1;
 }
 
@@ -1134,7 +1135,8 @@ a {
   background-image: url("../img/icons/insta-icon.svg");
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: #e74246;
 }
 
