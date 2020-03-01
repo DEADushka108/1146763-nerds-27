@@ -885,7 +885,8 @@ a {
   opacity: 1;
 }
 
-.catalog-item:hover {
+.catalog-item:hover,
+.catalog-item:focus-within {
   box-shadow: 0 6px 15px 5px rgba(0, 1, 1, 0.25);
 }
 
